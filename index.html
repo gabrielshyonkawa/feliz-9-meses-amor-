@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Nove Meses Juntos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #000000, #ff0000);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            margin: 20px;
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 10%;
+            left: 50%;
+            margin-top: -25px;
+            margin-left: -25px;
+            background: url('https://cdn-icons-png.flaticon.com/512/130/130177.png') no-repeat;
+            background-size: cover;
+            animation: float 5s infinite;
+            z-index: 5;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(-50%, 0);
+            }
+            50% {
+                transform: translate(-50%, -20px);
+            }
+            100% {
+                transform: translate(-50%, 0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0 0;
+        }
+
+        .hearts-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart-animated {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: rgba(255, 0, 0, 0.8);
+            transform: rotate(45deg);
+            animation: animateHeart 7s linear infinite;
+            border-radius: 50%;
+        }
+
+        @keyframes animateHeart {
+            0% {
+                transform: rotate(45deg) translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(45deg) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        .carousel {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            flex: 0 0 auto;
+        }
+
+        .carousel-item img {
+            width: 60%;
+            height: 350px;
+            border-radius: 20%; /* Ajuste o raio conforme necessário */
+            object-fit: cover;
+            border: solid 2px red;
+        }
+
+        .carousel-buttons {
+            margin-top: 20px;
+        }
+
+        .carousel-buttons button {
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            color: #000;
+        }
+
+        .carousel-buttons button:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #000;
+        }
+
+        .music-control:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .carousel img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .carousel-buttons button {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+
+            .music-control {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz 9 Meses Juntos, meu amoooorrr!</h1>
+        <p>Com amor, Gabriel Côrtes, seu namorado e futuro marido</p>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-02-26 à(s) 13.04.28_c4d45bc2.jpg" alt="Photo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-03-16 à(s) 22.34.07_86cc5e38.jpg" alt="Photo 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-03-16 à(s) 22.34.07_c1ead8dd.jpg" alt="Photo 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-03-16 à(s) 22.34.10_91116ec2.jpg" alt="Photo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-03-16 à(s) 22.34.11_cd1f9d00.jpg" alt="Photo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-06-12 à(s) 20.58.34_4985112e.jpg" alt="Photo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/Imagem do WhatsApp de 2024-06-12 à(s) 20.58.37_072a31c6.jpg" alt="Photo 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-buttons">
+            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+            <button id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <div class="hearts-container"></div>
+    <button class="music-control" id="musicControl"><i class="fas fa-music"></i></button>
+    <audio id="audioPlayer" src="assets/Gloria Groove - Nosso Primeiro Beijo (Ao Vivo).mp3" loop></audio>
+
+    <script>
+        let currentIndex = 0;
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const totalItems = carouselItems.length;
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            const transformValue = `translateX(${-currentIndex * 100}%)`;
+            document.querySelector('.carousel-inner').style.transform = transformValue;
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-animated');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = Math.random() * 100 + 'vh';
+            heart.style.animationDuration = Math.random() * 2 + 5 + 's';
+            document.querySelector('.hearts-container').appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 7000);
+        }
+
+        setInterval(createHeart, 300);
+
+        const musicControl = document.getElementById('musicControl');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        musicControl.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                musicControl.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                audioPlayer.pause();
+                musicControl.innerHTML = '<i class="fas fa-music"></i>';
+            }
+        });
+    </script>
+</body>
+</html>
